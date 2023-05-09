@@ -1,6 +1,8 @@
 ## Categraf UI
-通过UI管理categraf配置文件，远程RELOAD
+通过UI管理categraf配置文件，远程RELOAD,
 适用于nightingale v5
+##测试地址
+http://106.15.233.30/
 ## 安装
 
 ```shell
