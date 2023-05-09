@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+.vscode
+/categraf*
+*.log
+/vendor
+docker/conf
+docker/categraf
+/build
+/nohup.out

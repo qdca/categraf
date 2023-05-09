@@ -1,0 +1,32 @@
+<div class="ui top attached segment" style="margin-left: 30px">
+    <div class="ui two column grid">
+
+        <div class="column">
+            <h1 class="ui header">{{ .name }}</h1>
+        </div>
+
+        <div class="column">
+            <button class="ui right floated button" onclick="update_config('{{ .name }}')" tabindex="0">
+                更新配置
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="ui attached segment " style="margin-left: 30px">
+    <div class="ui form">
+
+        <div class="field">
+
+            <div class="ui basic segment">
+                <div class="ui inverted dimmer" id="dimmer">
+                    <div class="ui huge loader"></div>
+                </div>
+                <textarea class="code" rows="25" id="file-content" autofocus>{{ .file }}</textarea>
+            </div>
+
+        </div>
+
+    </div>
+</div>
