@@ -1,48 +1,27 @@
-## Categraf
-
-
-## 编译安装
-
-```shell
-# export GO111MODULE=on
-# export GOPROXY=https://goproxy.cn
-go build
-```
-
-## 二进制安装
+## Categraf UI
+通过UI管理categraf配置文件，远程RELOAD
+适用于nightingale v5
+## 安装
 
 ```shell
 tar zcvf categraf.tar.gz categraf conf
 ```
 
-
-## 运行
-
-```shell
-# test mode: just print metrics to stdout
-./categraf --test
-
-# test system and mem plugins
-./categraf --test --inputs system:mem
-
-# print usage message
-./categraf --help
-
-# run
-./categraf
-
-# run with specified config directory
-./categraf --configs /path/to/conf-directory
-
-# only enable system and mem plugins
-./categraf --inputs system:mem
-
-# use nohup to start categraf
-nohup ./categraf &> stdout.log &
+## 配置
+```
+[http]
+enable = true    ##http enable为true
+address = ":9100"
+print_access = false
+run_mode = "release"
 ```
 
 
+## 运行
+```shell
+./categraf
 
+```
 
 ## 增加UI编辑配置
 ![image](images/ui.jpg)
